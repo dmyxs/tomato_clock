@@ -1,0 +1,5 @@
+<view>
+  <text bindtap="onTap">{{content}}分钟</text>
+</view>
+
+

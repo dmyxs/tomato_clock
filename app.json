@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/count/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#e7624f",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"black",
+    "selectedColor":"#e7624f",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "任务",
+        "iconPath": "./image/time.png",
+        "selectedIconPath": "./image/time_active.png"
+      },
+      {
+        "pagePath": "pages/count/index",
+        "text": "统计",
+        "iconPath": "./image/count.png",
+        "selectedIconPath": "./image/count_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

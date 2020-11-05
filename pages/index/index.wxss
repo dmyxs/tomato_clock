@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100rpx 0;
+  box-sizing: border-box;
+}
+
+.home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  margin-top: 30rpx;
+  width: 600rpx;
+  margin-bottom: 50rpx;
+}
+
+.time-btn-container{
+  width: 600rpx;
+  margin-bottom: 50rpx;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.timeItem {
+  display: inline-block;
+  width: 100rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 20rpx;
+  color: #e7624f;
+  border-radius: 10rpx;
+  border:1px solid #e7624f
+}
+
+.timeItemActive{
+  background-color: #e7624f;
+  color: white;
+}
+
+.text {
+  color: #888;
+}
+
+.timeCount {
+  font-size: 30rpx;
+  color: #e7624f;
+}
+
+.mission-container{
+  width: 80%;
+  margin-top: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.mission-item{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e7624f;
+  color: #777;
+}
+
+.mission-item-active{
+  background-color: #e7624f;
+  color:white
+}
+
+.btn {
+  width: 300rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #e7624f;
+  color: white;
+  margin-top: 80rpx;
+}
+
+.clock-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock{
+  width: 500rpx;
+  height: 500rpx;
+  position: relative;
+}
+
+.progress_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500rpx;
+  height: 500rpx;
+}
+
+.progress_active{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500rpx;
+  height: 500rpx;
+}
+
+.progress_text {
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  /* background-color: red; */
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  font-size: 40rpx;
+}
+
+.stop{
+  background-color: green;
+  color: white;
+}
+
+.conplete {
+  margin-top: 80rpx;
+  background-color: green;
+  color: white;
+}
+
+.giveUp{
+  margin-top: 30rpx;
+  width: 300rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #e7624f;
+  color: white;
+}
+
+.slogin{
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  color: #ccc;
+}

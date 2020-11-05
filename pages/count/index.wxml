@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="count-container">
+    <block wx:for="{{countItem}}" wx:key="index">
+      <view class="count-item" >
+        <view class="count-title">{{item.title}}</view>
+        <view class="count-value">{{item.value}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="list-container">
+    <view class="list-header">
+      <view class="list-header-caption">
+        数据统计:
+        <text class="list-header-text">{{isToday ? todayList.length : historyList.length}}</text>
+      </view>
+      <view class="list-header-check">
+        <text class="list-header-date {{isToday ? 'active' : ''}}" bindtap="onSwitchToday">今日</text>
+        <text class="list-header-date {{isToday ? '' : 'active'}}" bindtap="onSwitchHistory">历史</text>
+      </view>
+    </view>
+    <view class="filter-container">
+      <block wx:for="{{filterItem}}" wx:key="index">
+        <view class="filterItem {{index == filterIndex ? 'active' : ''}}" bindtap="onFilterList" data-index="{{index}}">{{item}}</view>
+      </block>
+    </view>
+    <view class="list-title">
+      <text class="time">日期</text>
+      <text class="time">分类</text>
+      <text class="time">时长</text>
+    </view>
+    <view hidden="{{!isToday}}" class="list-content">
+      <v-no-data hidden="{{todayList.length}}" />
+      <block wx:for="{{todayList}}" wx:key="index">
+        <view class="list-item {{index % 2 == 1 ? 'list-item-active' : ''}}">
+          <text class="list-item-date">{{item.date}}</text>
+          <text class="list-item-category">{{item.category}}</text>
+          <text class="list-item-time">{{item.time}}分钟</text>
+        </view>
+      </block>
+    </view>
+    <view hidden="{{isToday}}" class="list-content">
+      <v-no-data hidden="{{historyList.length}}" />
+      <block wx:for="{{historyList}}" wx:key="index">
+        <view class="list-item {{index % 2 == 1 ? 'list-item-active' : ''}}">
+          <text class="list-item-date">{{item.date}}</text>
+          <text class="list-item-category">{{item.category}}</text>
+          <text class="list-item-time">{{item.time}}分钟</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

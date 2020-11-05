@@ -1,0 +1,4 @@
+<view hidden="{{hidden}}" class="container">
+  <image class="img" src="../../image/no-data.png" />
+  <text  class="text">当前没有数据，快去开始任务吧！</text>
+</view>

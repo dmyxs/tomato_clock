@@ -1,0 +1,144 @@
+.container{
+  box-sizing: border-box;
+}
+
+.count-container{
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 10rpx solid #ddd;
+}
+.count-item{
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #ddd;
+  box-sizing: border-box; */
+}
+
+.count-title{
+  font-size: 32rpx;
+  color: #666;
+}
+
+.count-value {
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  color: #e7624f;
+}
+
+.list-container{
+  height: 700rpx;
+  /* background-color: #ccc; */
+  padding: 0 10rpx;
+  /* border: 1rpx solid #e7624f; */
+}
+
+.list-header{
+  height: 80rpx;
+  /* background-color: #ddd; */
+  line-height: 80rpx;
+  /* margin: 10rpx 0; */
+  /* border-top: 1rpx solid #e7624f; */
+  border-bottom: 1rpx solid #e7624f;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-header-caption{
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #e7624f;
+  margin-left: 20rpx;
+}
+
+.list-header-text{
+  color: #666;
+  font-size: 28rpx;
+  margin-left: 15rpx;
+}
+
+.list-header-date {
+  font-size: 28rpx;
+  color: #e7624f;
+  margin-right: 20rpx;
+  padding: 3rpx 10rpx;
+  border-radius: 5rpx;
+  border: 1rpx solid #e7624f;
+}
+
+.filterItem{
+  font-size: 28rpx;
+  color: #777;
+  border-radius: 5rpx;
+  padding: 3rpx 8rpx;
+  border: 1rpx solid #ccc;
+}
+
+
+.active{
+  background-color: #e7624f;
+  color: white;
+  border: 1rpx solid #e7624f;
+}
+
+.filter-container{
+  height: 70rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15rpx;
+}
+
+
+.list-title {
+  height: 60rpx;
+  display: flex;
+  line-height: 60rpx;
+  font-weight: 600;
+  justify-content: space-around;
+  color: #555;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+
+.list-content {
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #777;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(245, 244, 244);
+}
+
+.list-item-active{
+  background-color: #ddd;
+}
+
+.list-item-date{
+  margin-left: -30rpx;
+}
+
+.list-item-category{
+  margin-left: -16rpx;
+}
+
+.list-item-time{
+  width: 100rpx;
+  text-align: center;
+  margin-left: 65rpx;
+}

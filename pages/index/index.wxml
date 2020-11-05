@@ -1,0 +1,37 @@
+<view class="container">
+  <view hidden="{{!homePage}}" class="home-container">
+    <view class="slider">
+      <slider value="{{time}}" min="1" max="60" selected-color="#e7624f"  show-value block-size="24" bindchange="onChangeSlider" />
+    </view>
+    <view class="time-btn-container">
+      <block wx:for="{{timeItem}}" wx:key="index">
+        <v-button class="{{timeItemIndex === index ? 'timeItem timeItemActive' : 'timeItem'}}" content="{{item}}" bind:checkTime="onCheckTime" index="{{index}}"/>
+      </block>
+    </view>
+    <view class="text">选择任务，专注 <text class="timeCount">{{time}}</text> 分钟</view>
+    <view class="mission-container">
+      <block wx:for="{{missions}}" wx:key="index">
+        <view class="mission-item {{index === missionItemIndex ? 'mission-item-active' : ''}}" bindtap="onCkeckMission" data-index="{{index}}">{{item}}</view>
+      </block>
+    </view>
+    <button class="btn" bindtap="onSwitchTimeoutPage">开始专注</button>
+  </view>
+
+  <view hidden="{{homePage}}"  class="clock-container">
+    <view class="clock">
+      <canvas canvas-id="progress_bg" class="progress_bg" />
+      <canvas canvas-id="progress_active" class="progress_active" />
+      <text class="progress_text">{{timeStr}}</text>
+    </view>
+    <button hidden="{{isComplete}}" class="btn {{isTimeStop ? 'stop' : ''}}" bindtap="onPauseOrGoon">{{isTimeStop ? '继续' : '暂停'}}</button>
+    <button hidden="{{!isComplete}}" class="btn conplete" bindtap="onSwitchHomePage">完成任务返回</button>
+    <text hidden="{{!isComplete}}" class="slogin">哇塞，你太棒了！</text>
+    <button hidden="{{!isTimeStop}}" class="giveUp" bindtap="onSwitchHomePage">放弃</button>
+    <text hidden="{{!isTimeStop}}" class="slogin">坚持，不要轻易放弃！</text>
+  </view>
+</view>
+
+
+
+
+

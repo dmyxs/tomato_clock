@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-no-data":"/component/noData/index"
+  },
+  "navigationBarTitleText": "统计"
+}

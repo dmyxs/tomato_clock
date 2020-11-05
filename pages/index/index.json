@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-button":"/component/button/index"
+  },
+  "navigationBarTitleText": "番茄时钟"
+}
