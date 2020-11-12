@@ -134,7 +134,7 @@
 }
 
 .list-item-category{
-  margin-left: -16rpx;
+  margin-left: 6rpx;
 }
 
 .list-item-time{
